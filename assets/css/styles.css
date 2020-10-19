@@ -1,8 +1,8 @@
-.experiences-list { text-align: justify; display: flex; flex-direction: column; justify-content: left; margin-right: 20%; margin-left: 20%; }
+.experiences-list { text-align: justify; display: flex; flex-direction: column; justify-content: left; margin-right: 20%; margin-left: 20%; margin-bottom: 40px; }
 
 .experience-header { display: flex; justify-content: left; align-items: baseline; }
 
-.experience-tech-icon { width: 50px; height: 50px; margin: 10px; }
+.experience-tech-icon { width: 30px; height: 30px; margin: 10px; }
 
 .experience-techs { display: flex; flex-wrap: wrap; margin-bottom: 20px; }
 
@@ -26,9 +26,9 @@
 
 .profile-subtitle { font-size: x-large; font-weight: lighter; }
 
-.profile-about { display: flex; align-items: center; justify-content: center; padding: 20px 20% 20px 20%; text-align: justify; }
+.profile-about { display: flex; align-items: center; justify-content: center; padding: 20px 20% 20px 20%; text-align: justify; margin-bottom: 40px; }
 
-.icon { width: 50px; height: 50px; margin: 10px; margin-right: 30px; }
+.icon { width: 30px; height: 30px; margin: 10px; margin-right: 30px; }
 
 .tech-header { display: flex; justify-content: left; align-items: center; margin-bottom: 20px; }
 
@@ -38,10 +38,14 @@
 
 .tech-title { display: flex; flex-direction: column; }
 
-.minor-tech-list { display: flex; flex-wrap: wrap; }
+.minor-tech-list { display: flex; flex-wrap: wrap; margin-bottom: 40px; }
 
-.minor-tech-icon { width: 50px; height: 50px; margin: 10px; }
+.minor-tech-icon { width: 30px; height: 30px; margin: 10px; }
 
 body { background-color: #fafafa; font-family: 'Roboto Mono', monospace; }
+
+.active { font-weight: bold; }
+
+.anchor:hover { color: rgba(0, 0, 0, 0.5) !important; }
 
 /*# sourceMappingURL=styles.css.map */
