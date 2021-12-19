@@ -20,44 +20,63 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="navbar-nav">
-        <span class="anchor nav-item nav-link font-weight-bold">Raphael Queiroz</span>
-        
-        <a class="nav-item nav-link " href="/">About
-            me</a>
-        
-        
+    <section class="profile-section">
+
+    <div class="profile-visual">
 
         
-        
-        <a class="nav-item nav-link active "
-            href="/techs.html">Technologies</a>
-        
 
-        
-        
-        <a class="nav-item nav-link "
-            href="/experiences.html">Experiences</a>
-        
-
-        
-    </div>
-</nav>
-    
-
-<div class="tech-list">
-    <h4>Main technologies which i have solid experience throughtout my career:</h4>
-    
-    <div class="major-tech-detail">
-        <div class="tech-header">
-            <img class="icon" src=assets/images/python_icon.png>
-            <div class="tech-title">
-                <h3>Python</h3>
-                <h4>Programming Language</h4>
-            </div>
+        <img class="profile-picture" src=/assets/images/profile_picture.jpg>
+        <div class="profile-links-container">
+            <a href="https://www.linkedin.com/in/queirozraphael/" target="_blank"
+                class="fa fa-linkedin profile-link"></a>
+            <a href="https://github.com/santanaraphael" target="_blank" class="fa fa-github profile-link"></a>
+            <a href="mailto:queiroz.raphael@live.com" target="_blank" class="fa fa-envelope profile-link"></a>
         </div>
-        <p>
+    </div>
+    <div class="profile-summary">
+        
+        <h1 class="profile-title">
+            <a class="profile-link-text "
+                href="/">
+                Raphael Queiroz
+            </a>
+        </h1>
+        <h2 class="profile-subtitle">Software Developer</h2>
+        <div class="profile-links">
+            |
+            
+            
+            
+            
+            <a class="profile-link-text current-page-link"
+                href="/techs.html">Technologies</a>
+            |
+            
+            
+            
+            <a class="profile-link-text "
+                href="/experiences.html">Experiences</a>
+            |
+            
+            
+        </div>
+    </div>
+</section>
+    
+
+<div class="test">
+    <div class="tech-list">
+        
+        <div class="major-tech-detail">
+            <div class="tech-header">
+                <img class="icon" src=assets/images/python_icon.png>
+                <div class="tech-title">
+                    <h3>Python</h3>
+                    <h4>Programming Language</h4>
+                </div>
+            </div>
+            <p>
     I've started using Python on my college around 2015, working mostly on using it
     as a MATLAB alternative for simulations. After a while, i discovered its power as a
     scripting language, and at that time i joined my first tech company.
@@ -68,18 +87,84 @@
     I also used it a lot to develop background workers to perform tasks on the background of
     distributed systems.
 </p>
-    </div>
-
-    
-    <div class="major-tech-detail">
-        <div class="tech-header">
-            <img class="icon" src=assets/images/django_icon.png>
-            <div class="tech-title">
-                <h3>Django</h3>
-                <h4>Web Framework</h4>
-            </div>
         </div>
-        <p>
+
+        
+        <div class="major-tech-detail">
+            <div class="tech-header">
+                <img class="icon" src=assets/images/fastapi_icon.png>
+                <div class="tech-title">
+                    <h3>FastAPI</h3>
+                    <h4>Web Framework</h4>
+                </div>
+            </div>
+            <p>
+    I loved FastAPI at first glance! The way it leverages Pydantic models to perform serialization and automatically
+    generate
+    documentation is pretty neat. It has since become my favorite tool for building REST APIs with Python.
+</p>
+<p>
+    It also provides a plug-and-play solution for dependency injection which doesn't involve any huge hassle to setup,
+    so in
+    my opinion that's another plus.
+</p>
+        </div>
+
+        
+        <div class="major-tech-detail">
+            <div class="tech-header">
+                <img class="icon" src=assets/images/postgres_icon.png>
+                <div class="tech-title">
+                    <h3>PostgreSQL</h3>
+                    <h4>SQL Database</h4>
+                </div>
+            </div>
+            <p>
+    I started my journey with relational databases using mostly ORM's because they already implement the good practices
+    for you on the background. So in reality, it was easy and safe to use and it also points you in the right direction
+    for having a good database model.
+</p>
+<p>
+    But one thing that i learned was that ORMs are not a silver bullet and then i had
+    to dive deeper into raw SQL, specially when more complex relationships between tables happen or when the queries
+    themselves start to become too complex. To this day, i wouldn't say i'm a superstar in SQL, but i'm very capable of
+    safely designing and consuming any database.
+</p>
+        </div>
+
+        
+        <div class="major-tech-detail">
+            <div class="tech-header">
+                <img class="icon" src=assets/images/rabbitmq_icon.jpg>
+                <div class="tech-title">
+                    <h3>RabbitMQ</h3>
+                    <h4>Message Broker</h4>
+                </div>
+            </div>
+            <p>
+    I've used RabbitMQ as the backbone of an event-driven architecture system and
+    used a lot of its features to solve the distributed problems in a scalable way.
+    The way exchanges work makes it very easy to plug new applications as subscribers
+    of old events without having any impact on the previous behavior.
+</p>
+<p>
+    Some cool things i developed on it include a scheduled queue to regularly perform tasks in
+    a scalable way, where the scheduled tasks can be divided among many workers, and also
+    increasing back-off time retry queues, also making it possible to scale the workers without
+    creating any side effects.
+</p>
+        </div>
+
+        
+        <div class="major-tech-detail">
+            <div class="tech-header">
+                <img class="icon" src=assets/images/django_icon.png>
+                <div class="tech-title">
+                    <h3>Django</h3>
+                    <h4>Web Framework</h4>
+                </div>
+            </div>
+            <p>
     One thing that i always liked about Django is how easy it is to setup a simple website
     with it. I started using it on my undergraduate thesis where i had to create an application
     that performed earthing grids simulations and returned a project to the user. I had most
@@ -96,37 +181,18 @@
     Another piece i loved in Django was Django Rest Framework (DRF). It applied all of the benefits
     of using Django on developing APIs as well.
 </p>
-    </div>
-
-    
-    <div class="major-tech-detail">
-        <div class="tech-header">
-            <img class="icon" src=assets/images/flask_icon.png>
-            <div class="tech-title">
-                <h3>Flask</h3>
-                <h4>Web Framework</h4>
-            </div>
         </div>
-        <p>
-    On the opposite side of Django there's Flask, a minimalistic framework. I've used it
-    professionally for almost two years, and by being very lightweight, it gives you plenty of
-    room to build an entire framework around it. It provides you with only the essential tools
-    to run an API, but it's very extensible and i had much success with it on a distributed
-    architecture, because Flask was only a piece of the application that had the sole responsibility
-    of serving the API.
-</p>
-    </div>
 
-    
-    <div class="major-tech-detail">
-        <div class="tech-header">
-            <img class="icon" src=assets/images/mongodb_icon.png>
-            <div class="tech-title">
-                <h3>MongoDB</h3>
-                <h4>Non-SQL Database</h4>
+        
+        <div class="major-tech-detail">
+            <div class="tech-header">
+                <img class="icon" src=assets/images/mongodb_icon.png>
+                <div class="tech-title">
+                    <h3>MongoDB</h3>
+                    <h4>Non-SQL Database</h4>
+                </div>
             </div>
-        </div>
-        <p>
+            <p>
     MongoDB was one of the first databases i ever used, due to being easy to setup and use right
     out of the box. It surely taught me some lessons, specially about performance and how to
     optimize queries and pagination, designing the right schema and filters, and concurrency.
@@ -136,55 +202,33 @@
     One of the coolest things i could do with it is develop a multi-cursor pagination wrapper over
     the Python lib mongoengine.
 </p>
-    </div>
-
-    
-    <div class="major-tech-detail">
-        <div class="tech-header">
-            <img class="icon" src=assets/images/rabbitmq_icon.jpg>
-            <div class="tech-title">
-                <h3>RabbitMQ</h3>
-                <h4>Message Broker</h4>
-            </div>
         </div>
-        <p>
-    I've used RabbitMQ as the backbone of an event-driven architecture system and
-    used a lot of its features to solve the distributed problems in a scalable way.
-    The way exchanges work makes it very easy to plug new applications as subscribers
-    of old events without having any impact on the previous behavior.
-</p>
-<p>
-    Some cool things i developed on it include a scheduled queue to regularly perform tasks in
-    a scalable way, where the scheduled tasks can be divided among many workers, and also
-    increasing back-off time retry queues, also making it possible to scale the workers without
-    creating any side effects.
-</p>
-    </div>
 
-    
-    <h4>Other technologies i also used along the way:</h4>
-    <div class="minor-tech-list">
         
-        <img class="minor-tech-icon" title=Bitcoin src=assets/images/bitcoin_icon.png>
-        
-        <img class="minor-tech-icon" title=Blockchain src=assets/images/blockchain_icon.png>
-        
-        <img class="minor-tech-icon" title=Docker src=assets/images/docker_icon.png>
-        
-        <img class="minor-tech-icon" title=FastAPI src=assets/images/fastapi_icon.png>
-        
-        <img class="minor-tech-icon" title=NodeJS src=assets/images/nodejs_icon.png>
-        
-        <img class="minor-tech-icon" title=PostgreSQL src=assets/images/postgres_icon.png>
-        
-        <img class="minor-tech-icon" title=Redis src=assets/images/redis_icon.png>
-        
-        <img class="minor-tech-icon" title=Selenium src=assets/images/selenium_icon.png>
-        
-        <img class="minor-tech-icon" title=Terraform src=assets/images/terraform_icon.png>
-        
-    </div>
+        <h4>Other technologies i also used along the way:</h4>
+        <div class="minor-tech-list">
+            
+            <img class="minor-tech-icon" title=Bitcoin src=assets/images/bitcoin_icon.png>
+            
+            <img class="minor-tech-icon" title=Blockchain src=assets/images/blockchain_icon.png>
+            
+            <img class="minor-tech-icon" title=Docker src=assets/images/docker_icon.png>
+            
+            <img class="minor-tech-icon" title=Flask src=assets/images/flask_icon.png>
+            
+            <img class="minor-tech-icon" title=Kubernetes src=assets/images/kubernetes_icon.svg>
+            
+            <img class="minor-tech-icon" title=NodeJS src=assets/images/nodejs_icon.png>
+            
+            <img class="minor-tech-icon" title=Redis src=assets/images/redis_icon.png>
+            
+            <img class="minor-tech-icon" title=Selenium src=assets/images/selenium_icon.png>
+            
+            <img class="minor-tech-icon" title=Terraform src=assets/images/terraform_icon.png>
+            
+        </div>
 
+    </div>
 </div>
 </body>
 
