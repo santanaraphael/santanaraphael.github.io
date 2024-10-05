@@ -39,10 +39,10 @@
         <h1 class="profile-title">
             <a class="profile-link-text "
                 href="/">
-                Raphael Queiroz
+                Raphael Santana
             </a>
         </h1>
-        <h2 class="profile-subtitle">Software Developer</h2>
+        <h2 class="profile-subtitle">Software Engineer</h2>
         <div class="profile-links">
             |
             
@@ -50,185 +50,230 @@
             
             
             <a class="profile-link-text current-page-link"
-                href="/techs.html">Technologies</a>
+                href="/techs.html">Technical Stack</a>
             |
             
             
             
             <a class="profile-link-text "
-                href="/experiences.html">Experiences</a>
+                href="/experiences.html">Work Experience</a>
             |
             
             
         </div>
     </div>
 </section>
+    <div>
     
-
-<div class="test">
-    <div class="tech-list">
-        
-        <div class="major-tech-detail">
-            <div class="tech-header">
-                <img class="icon" src=assets/images/python_icon.png>
-                <div class="tech-title">
+    
+    
+    
+    
+    <section class="new-tech-list">
+        <h2>Programming Languages</h2>
+        <div class="new-tech-cards">
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Python src=assets/images/python_icon.png>
+                <div class="new-tech-card-content">
                     <h3>Python</h3>
-                    <h4>Programming Language</h4>
                 </div>
             </div>
-            <p>
-    I've started using Python on my college around 2015, working mostly on using it
-    as a MATLAB alternative for simulations. After a while, i discovered its power as a
-    scripting language, and at that time i joined my first tech company.
-</p>
-<p>
-    I used it to consume external APIs, scrape websites and so on. The next logical step
-    was tackling on the web development side, and i started developing websites and APIs.
-    I also used it a lot to develop background workers to perform tasks on the background of
-    distributed systems.
-</p>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Scala src=assets/images/scala_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Scala</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Elixir src=assets/images/elixir_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Elixir</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=NodeJS src=assets/images/nodejs_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>NodeJS</h3>
+                </div>
+            </div>
+            
         </div>
-
-        
-        <div class="major-tech-detail">
-            <div class="tech-header">
-                <img class="icon" src=assets/images/fastapi_icon.png>
-                <div class="tech-title">
+        <h2>Frameworks</h2>
+        <div class="new-tech-cards">
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=FastAPI src=assets/images/fastapi_icon.png>
+                <div class="new-tech-card-content">
                     <h3>FastAPI</h3>
-                    <h4>Web Framework</h4>
                 </div>
             </div>
-            <p>
-    I loved FastAPI at first glance! The way it leverages Pydantic models to perform serialization and automatically
-    generate
-    documentation is pretty neat. It has since become my favorite tool for building REST APIs with Python.
-</p>
-<p>
-    It also provides a plug-and-play solution for dependency injection which doesn't involve any huge hassle to setup,
-    so in
-    my opinion that's another plus.
-</p>
-        </div>
-
-        
-        <div class="major-tech-detail">
-            <div class="tech-header">
-                <img class="icon" src=assets/images/postgres_icon.png>
-                <div class="tech-title">
-                    <h3>PostgreSQL</h3>
-                    <h4>SQL Database</h4>
-                </div>
-            </div>
-            <p>
-    I started my journey with relational databases using mostly ORM's because they already implement the good practices
-    for you on the background. So in reality, it was easy and safe to use and it also points you in the right direction
-    for having a good database model.
-</p>
-<p>
-    But one thing that i learned was that ORMs are not a silver bullet and then i had
-    to dive deeper into raw SQL, specially when more complex relationships between tables happen or when the queries
-    themselves start to become too complex. To this day, i wouldn't say i'm a superstar in SQL, but i'm very capable of
-    safely designing and consuming any database.
-</p>
-        </div>
-
-        
-        <div class="major-tech-detail">
-            <div class="tech-header">
-                <img class="icon" src=assets/images/rabbitmq_icon.jpg>
-                <div class="tech-title">
-                    <h3>RabbitMQ</h3>
-                    <h4>Message Broker</h4>
-                </div>
-            </div>
-            <p>
-    I've used RabbitMQ as the backbone of an event-driven architecture system and
-    used a lot of its features to solve the distributed problems in a scalable way.
-    The way exchanges work makes it very easy to plug new applications as subscribers
-    of old events without having any impact on the previous behavior.
-</p>
-<p>
-    Some cool things i developed on it include a scheduled queue to regularly perform tasks in
-    a scalable way, where the scheduled tasks can be divided among many workers, and also
-    increasing back-off time retry queues, also making it possible to scale the workers without
-    creating any side effects.
-</p>
-        </div>
-
-        
-        <div class="major-tech-detail">
-            <div class="tech-header">
-                <img class="icon" src=assets/images/django_icon.png>
-                <div class="tech-title">
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Django src=assets/images/django_icon.png>
+                <div class="new-tech-card-content">
                     <h3>Django</h3>
-                    <h4>Web Framework</h4>
                 </div>
             </div>
-            <p>
-    One thing that i always liked about Django is how easy it is to setup a simple website
-    with it. I started using it on my undergraduate thesis where i had to create an application
-    that performed earthing grids simulations and returned a project to the user. I had most
-    of the code that did the calculations working, but i still needed to figure out an interface
-    for the program and i had a really tight schedule.
-</p>
-<p>
-    In two weeks i was able to learn the framework and get the application running, albeit not
-    doing it the best way the first time. With time i was able to study more about it and worked
-    some POCs on it. It brings everything to the table, so you can focus on the domain of your
-    application.
-</p>
-<p>
-    Another piece i loved in Django was Django Rest Framework (DRF). It applied all of the benefits
-    of using Django on developing APIs as well.
-</p>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Flask src=assets/images/flask_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Flask</h3>
+                </div>
+            </div>
+            
         </div>
-
-        
-        <div class="major-tech-detail">
-            <div class="tech-header">
-                <img class="icon" src=assets/images/mongodb_icon.png>
-                <div class="tech-title">
+        <h2>DevOps Tools</h2>
+        <div class="new-tech-cards">
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Datadog src=assets/images/datadog_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Datadog</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Docker src=assets/images/docker_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Docker</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=GitHub Actions src=assets/images/github_actions_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>GitHub Actions</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Graylog src=assets/images/graylog_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Graylog</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Kubernetes src=assets/images/kubernetes_icon.svg>
+                <div class="new-tech-card-content">
+                    <h3>Kubernetes</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Sentry src=assets/images/sentry_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Sentry</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=SonarQube src=assets/images/sonarqube_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>SonarQube</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Terraform src=assets/images/terraform_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Terraform</h3>
+                </div>
+            </div>
+            
+        </div>
+        <h2>Databases</h2>
+        <div class="new-tech-cards">
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=PostgreSQL src=assets/images/postgres_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>PostgreSQL</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Elasticsearch src=assets/images/elasticsearch_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Elasticsearch</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=MongoDB src=assets/images/mongodb_icon.png>
+                <div class="new-tech-card-content">
                     <h3>MongoDB</h3>
-                    <h4>Non-SQL Database</h4>
                 </div>
             </div>
-            <p>
-    MongoDB was one of the first databases i ever used, due to being easy to setup and use right
-    out of the box. It surely taught me some lessons, specially about performance and how to
-    optimize queries and pagination, designing the right schema and filters, and concurrency.
-    Also with MongoDB i had the first contact with atomic operations and also with geolocation queries.
-</p>
-<p>
-    One of the coolest things i could do with it is develop a multi-cursor pagination wrapper over
-    the Python lib mongoengine.
-</p>
-        </div>
-
-        
-        <h4>Other technologies i also used along the way:</h4>
-        <div class="minor-tech-list">
             
-            <img class="minor-tech-icon" title=Bitcoin src=assets/images/bitcoin_icon.png>
-            
-            <img class="minor-tech-icon" title=Blockchain src=assets/images/blockchain_icon.png>
-            
-            <img class="minor-tech-icon" title=Docker src=assets/images/docker_icon.png>
-            
-            <img class="minor-tech-icon" title=Flask src=assets/images/flask_icon.png>
-            
-            <img class="minor-tech-icon" title=Kubernetes src=assets/images/kubernetes_icon.svg>
-            
-            <img class="minor-tech-icon" title=NodeJS src=assets/images/nodejs_icon.png>
-            
-            <img class="minor-tech-icon" title=Redis src=assets/images/redis_icon.png>
-            
-            <img class="minor-tech-icon" title=Selenium src=assets/images/selenium_icon.png>
-            
-            <img class="minor-tech-icon" title=Terraform src=assets/images/terraform_icon.png>
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Redis src=assets/images/redis_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Redis</h3>
+                </div>
+            </div>
             
         </div>
 
-    </div>
+        <h2>Concepts & Architecture</h2>
+        <div class="new-tech-cards">
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=CQRS src=assets/images/cqrs_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>CQRS</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Domain Driven Design src=assets/images/ddd_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Domain Driven Design</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Event Sourcing src=assets/images/event_sourcing_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Event Sourcing</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=GraphQL src=assets/images/graphql_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>GraphQL</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=gRPC src=assets/images/grpc_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>gRPC</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=Microservices src=assets/images/microservices_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>Microservices</h3>
+                </div>
+            </div>
+            
+            <div class="new-tech-card">
+                <img class="new-tech-card-icon" title=REST APIs src=assets/images/rest_icon.png>
+                <div class="new-tech-card-content">
+                    <h3>REST APIs</h3>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 </div>
 </body>
 
