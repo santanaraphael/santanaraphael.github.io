@@ -258,6 +258,28 @@
   transition: 0.3s;
 }
 
+.new-tech-card-outer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+  min-width: 25px;
+  max-width: 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.new-tech-card-outer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
 .new-tech-card-content h3 {
   font-size: 0.9em;
 }
