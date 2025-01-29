@@ -1,0 +1,241 @@
+.experiences-list {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+}
+
+.experience-tech-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.experience-tech-icon:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.experience-techs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.experience-detail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  margin: 10px;
+}
+
+.profile-visual {
+  flex-direction: column;
+  margin: 50px 50px 20px 20px;
+}
+
+.profile-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  margin: 2px;
+  text-align: center;
+  text-decoration: none;
+  background: #4b4b4b;
+  color: white;
+  border-radius: 50%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: black;
+  background: #f0f0f0;
+}
+
+.profile-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px 20px 50px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-title {
+  font-size: xx-large;
+  font-weight: bolder;
+  border-bottom: 2px solid black;
+}
+
+.profile-subtitle {
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+.profile-about {
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 8px;
+  color: #333;
+}
+.profile-about i {
+  font-style: italic;
+  color: #666;
+}
+.profile-about i::before, .profile-about i::after {
+  color: #999;
+}
+@media (max-width: 768px) {
+  .profile-about {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .profile-about p {
+    line-height: 1.5;
+  }
+}
+
+.tech-list__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.tech-list__heading {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tech-card__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.tech-card__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.tech-card__link {
+  text-decoration: none;
+  color: inherit;
+  width: calc(25% - 20px);
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.tech-card__body {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.tech-card__link:hover .tech-card__body {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.tech-card__content {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .tech-card__link {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .tech-card__link {
+    width: 100%;
+  }
+}
+body {
+  background-color: rgb(240, 240, 240);
+  font-family: "Roboto Mono", monospace;
+}
+
+.current-page-link {
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+}
+
+.profile-link-text {
+  color: black;
+}
+
+.anchor:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+p {
+  font-size: 130%;
+  max-width: 1200px;
+}
+
+li {
+  font-size: 120%;
+  max-width: 1200px;
+}
+
+/*# sourceMappingURL=styles.css.map */
